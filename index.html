@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular progress bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <div class="progress">
+          <div class="outer">
+             <div class="inner">
+                  <span class="percent" id="percent">25%</span>
+                   <p>Curriculum progress</p>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="200px" height="200px">
+                <circle cx="100" cy="100" r="90" stroke-linecap="round"/>
+              </svg>
+        </div>
+        <h1>Curriculum</h1>
+        <div class="chapters">
+            <label for="checkbox-1">
+                <input type="checkbox" checked id="checkbox-1" name="checkbox-1">
+                <div class="info">
+                    <h2>Chapter 1</h2>
+                    <p>Introduction</p>
+                </div>
+            </label>
+            <label for="checkbox-2">
+                <input type="checkbox" id="checkbox-2" name="checkbox-2">
+                <div class="info">
+                    <h2>Chapter 2</h2>
+                    <p>Information architecture</p>
+                </div>
+            </label>
+            <label for="checkbox-3">
+                <input type="checkbox" id="checkbox-3" name="checkbox-3">
+                <div class="info">
+                    <h2>Chapter 3</h2>
+                    <p>Data and security</p>
+                </div>
+            </label>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
